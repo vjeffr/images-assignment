@@ -1,6 +1,8 @@
 $(document).ready(function(){
+  console.log("hi");
   $(".spot").on("click", function(e){
     e.preventDefault();
+
 
       var clicked_spot = $(this);
       var description = clicked_spot.data("description");
@@ -8,7 +10,7 @@ $(document).ready(function(){
       $(".modal").find(".inner").find("p").text(description);
       $(".modal").addClass("active");
 
-
+      console.log(description);
 
   });
   // closes the second fnctn
