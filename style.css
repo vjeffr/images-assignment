@@ -1,0 +1,159 @@
+/*
+mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Start your base/mobile styles here */
+
+.container {
+  max-width: 750px;
+  padding: 10px;
+  margin: 10% auto 10% auto; /*this gives padding without using the padding command*/
+  height: auto;
+}
+
+.byline {
+font-size: 12px;
+
+}
+
+#caption {
+  font-size: 0.8em;
+}
+
+.credit {
+  font-size: 0.8em;
+  color: #625D5D;
+}
+
+.text {
+  clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+h1 {
+  text-align:center
+}
+
+
+
+div.hotspot {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+
+div.hotspot img{
+  width: 100%;
+}
+/* this directs the behavior of all the images with respect to its div */
+
+
+div.modal {
+  height: 30vh;
+  width: 30vw;
+  position: fixed;
+  top: 200%;
+  /* top 200% means it will always be 200% away from the top of the screen */
+  left: 0;
+  padding: 1em;
+  background-color: rgba(0,0,0,0.65);
+  /* "a" means alpha and it corresponds to the 0.65 in parenthesis.  Codes for opacity, so it will be 65% opaque */
+  transition: top 0.5s ease-in-out;
+}
+
+div.modal.active {
+  top: 0;
+}
+
+div.modal div.inner {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+
+.spot {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+#blue {
+  left: 15%;
+  bottom: 22%;
+  background-color: #008080;
+}
+
+#green {
+  left: 31%;
+  bottom: 17%;
+  background-color: #228B22;
+}
+
+#rose {
+  right: 43%;
+  top: 10%;
+  background-color: #ff8080;
+}
+
+#yellow {
+  right: 31%;
+  bottom: 11%;
+  background-color: #FFFF00;
+}
+
+#blue2 {
+  left: 15%;
+  top: 10%;
+  background-color: #008080;
+}
+
+#green2 {
+  left: 33%;
+  top: 24%;
+  background-color: #228B22;
+}
+
+#rose2 {
+  right: 37%;
+  top: 28%;
+  background-color: #ff8080;
+}
+
+#yellow2 {
+  right: 24%;
+  top: 23.5%;
+  background-color: #FFFF00;
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
