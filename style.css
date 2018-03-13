@@ -68,8 +68,8 @@ div.hotspot img{
 
 
 div.modal {
-  height: 30vh;
-  width: 30vw;
+  height: 60vh;
+  width: 60vw;
   position: fixed;
   top: 200%;
   /* top 200% means it will always be 200% away from the top of the screen */
@@ -78,6 +78,7 @@ div.modal {
   background-color: rgba(0,0,0,0.65);
   /* "a" means alpha and it corresponds to the 0.65 in parenthesis.  Codes for opacity, so it will be 65% opaque */
   transition: top 0.5s ease-in-out;
+  z-index: 5;
 }
 
 div.modal.active {
