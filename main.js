@@ -6,8 +6,16 @@ $(document).ready(function(){
 
       var clicked_spot = $(this);
       var description = clicked_spot.data("description");
+      var image = clicked_spot.data("image");
+
+      if(image != false){
+        image = "<img src='" + image + "' />"
+      } else{
+        image = "";
+      }
 
       $(".modal").find(".inner").find("p").text(description);
+      $(".modal").find(".inner").find(".image").html(image);
       $(".modal").addClass("active");
 
       console.log(description);

@@ -52,14 +52,11 @@ h1 {
   text-align:center
 }
 
-
-
 div.hotspot {
   position: relative;
   max-width: 980px;
   margin: 0 auto;
 }
-
 
 div.hotspot img{
   width: 100%;
@@ -68,8 +65,8 @@ div.hotspot img{
 
 
 div.modal {
-  height: 60vh;
-  width: 60vw;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   top: 200%;
   /* top 200% means it will always be 200% away from the top of the screen */
@@ -79,6 +76,7 @@ div.modal {
   /* "a" means alpha and it corresponds to the 0.65 in parenthesis.  Codes for opacity, so it will be 65% opaque */
   transition: top 0.5s ease-in-out;
   z-index: 5;
+  font-size: 1.8em;
 }
 
 div.modal.active {
@@ -98,7 +96,11 @@ div.modal div.inner {
   width: 50px;
   border-radius: 50%;
   background-color: #000000;
-  opacity: 0.8;
+  opacity: 0.5;
+}
+
+.image img{
+  max-width: 100%;
 }
 
 #blue {
